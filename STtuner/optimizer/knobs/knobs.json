@@ -1,0 +1,251 @@
+{
+    "spark.executor.cores": {
+        "default": 1,
+        "dynamic": "Yes",
+        "max": 4,
+        "min": 1,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.executor.memory": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 43,
+        "min": 5,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.executor.instances": {
+        "default": 3,
+        "dynamic": "Yes",
+        "max": 12,
+        "min": 3,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.default.parallelism": {
+        "default": 8,
+        "dynamic": "Yes",
+        "max": 50,
+        "min": 8,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.memory.offHeap.enabled": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.memory.offHeap.size": {
+        "default": 10,
+        "dynamic": "Yes",
+        "max": 100,
+        "min": 10,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.memory.fraction": {
+        "default": 0.8,
+        "dynamic": "Yes",
+        "max": 1,
+        "min": 0.5,
+        "scope": "Global",
+        "type": "float"
+    },
+    "spark.memory.storageFraction": {
+        "default": 0.8,
+        "dynamic": "Yes",
+        "max": 1,
+        "min": 0.5,
+        "scope": "Global",
+        "type": "float"
+    },
+    "spark.shuffle.file.buffer": {
+        "default": 32,
+        "dynamic": "Yes",
+        "max": 128,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.speculation": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.reducer.maxSizeInFlight": {
+        "default": 32,
+        "dynamic": "Yes",
+        "max": 128,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.shuffle.sort.bypassMergeThreshold": {
+        "default": 300,
+        "dynamic": "Yes",
+        "max": 1000,
+        "min": 100,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.speculation.interval": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 100,
+        "min": 10,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.speculation.multiplier": {
+        "default": 1,
+        "dynamic": "Yes",
+        "max": 5,
+        "min": 1,
+        "scope": "Global",
+        "type": "float"
+    },
+    "spark.speculation.quantile": {
+        "default": 0.5,
+        "dynamic": "Yes",
+        "max": 1,
+        "min": 0,
+        "scope": "Global",
+        "type": "float"
+    },
+    "spark.broadcast.blockSize": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 128,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.io.compression.codec": {
+        "default": "snappy",
+        "dynamic": "snappy",
+        "enum_values": [
+            "snappy",
+            "lzf",
+            "lz4"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.io.compression.lz4.blockSize": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 32,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.io.compression.snappy.blockSize": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 32,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.kryo.referenceTracking": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.kryoserializer.buffer.max": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 128,
+        "min": 8,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.kryoserializer.buffer": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 128,
+        "min": 2,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.storage.memoryMapThreshold": {
+        "default": 100,
+        "dynamic": "Yes",
+        "max": 500,
+        "min": 50,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.network.timeout": {
+        "default": 20,
+        "dynamic": "Yes",
+        "max": 500,
+        "min": 20,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.locality.wait": {
+        "default": 1,
+        "dynamic": "Yes",
+        "max": 10,
+        "min": 1,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "spark.shuffle.compress": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.shuffle.spill.compress": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.broadcast.compress": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "spark.rdd.compress": {
+        "default": "True",
+        "dynamic": "True",
+        "enum_values": [
+            "True",
+            "False"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    }
+}
